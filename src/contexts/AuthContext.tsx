@@ -9,8 +9,12 @@ type AuthContextType = {
 const AuthContext = createContext<AuthContextType | null>(null);
 
 // Credenciais fixas para único usuário
-const ADMIN_EMAIL = "edinaroliveira7@gmail.com";
-const ADMIN_PASSWORD = "edinarol7";
+const ADMIN_EMAIL = import.meta.env.VITE_ADMIN_EMAIL;
+const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD;
+
+if (!ADMIN_EMAIL || !ADMIN_PASSWORD) {
+  throw new Error('Missing admin credentials in environment variables');
+}
 
 export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);

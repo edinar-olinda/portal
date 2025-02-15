@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
         <div className="relative h-[600px] rounded-lg overflow-hidden shadow-xl animate-fadeIn">
           <img
-            src="/img.jpeg"
+            src="/portal/img.jpeg"
             alt="Dra. Maria Silva em sessão de Pilates"
             className="object-cover w-full h-full"
           />

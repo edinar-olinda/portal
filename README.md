@@ -1,3 +1,27 @@
+# Portal Fisioterapia
+
+## Configuração do Ambiente
+
+1. Clone o repositório
+2. Copie o arquivo `.env.example` para `.env`
+```bash
+cp .env.example .env
+```
+3. Preencha as variáveis de ambiente no arquivo `.env`
+4. Instale as dependências
+```bash
+npm install
+```
+5. Execute o projeto
+```bash
+npm run dev
+```
+
+## Segurança
+- Nunca commite o arquivo `.env`
+- Mantenha as credenciais seguras
+- Use apenas HTTPS em produção
+
 # Welcome to your Lovable project
 
 ## Project info

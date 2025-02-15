@@ -26,7 +26,7 @@ const Services = () => {
         <h2 className="text-3xl font-bold text-center text-text mb-12">
           Nossos Serviços
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center max-w-5xl mx-auto">
           {services.map((service, index) => (
             <Card key={index} className="bg-white hover:shadow-lg transition-shadow">
               <CardHeader>
