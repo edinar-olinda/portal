@@ -91,3 +91,17 @@ Simply open [Lovable](https://lovable.dev/projects/708c230f-0ebc-485e-8355-97563
 ## I want to use a custom domain - is that possible?
 
 We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+
+## Deploy
+
+### Configurar Secrets no GitHub
+
+1. Acesse as configurações do repositório no GitHub
+2. Vá para Settings > Secrets and variables > Actions
+3. Adicione os seguintes secrets:
+   - `VITE_SUPABASE_URL`: URL do seu projeto Supabase
+   - `VITE_SUPABASE_KEY`: Chave anônima do Supabase
+   - `VITE_ADMIN_EMAIL`: Email do administrador
+   - `VITE_ADMIN_PASSWORD`: Senha do administrador
+
+O deploy será feito automaticamente para GitHub Pages quando houver push na branch main.
